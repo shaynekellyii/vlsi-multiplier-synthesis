@@ -1,0 +1,29 @@
+# //  ModelSim SE 6.5a Mar 27 2009 Linux 2.6.32-504.el6.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim e 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.e(beh)#1
+source scripts/simulate.tcl
+# vsim -novopt e 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.e(beh)
+# Refreshing /guest/3/escmc36/vlsi-multiplier-synthesis/sim/work.mulcascade(struct)
+# Loading work.mulcascade(struct)
+# Refreshing /guest/3/escmc36/vlsi-multiplier-synthesis/sim/work.mul32(beh)
+# Loading work.mul32(beh)
+# Refreshing /guest/3/escmc36/vlsi-multiplier-synthesis/sim/work.reg64(beh)
+# Loading work.reg64(beh)
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /guest/3/escmc36/vlsi-multiplier-synthesis/sim/wave.do

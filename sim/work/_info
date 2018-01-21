@@ -1,0 +1,116 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/escmc36/vlsi-multiplier-synthesis/sim
+T_opt
+VGP7XzEEke[l;PX`Zbkkl00
+04 1 3 work e beh 1
+=1--5a63e544-b2173-1fe3
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OE;O;6.5a;42
+Ee
+Z1 w1516496157
+Z2 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z4 8../vhdl/tb_mulcascade.vhd
+Z5 F../vhdl/tb_mulcascade.vhd
+l0
+L5
+VCXka@1JkP@QnDzPj`aP0@0
+Z6 OE;C;6.5a;42
+32
+Z7 tExplicit 1
+!s100 C^N7K_g]ALdJeV_4ez>RO2
+Abeh
+R2
+R3
+DEx4 work 1 e 0 22 CXka@1JkP@QnDzPj`aP0@0
+l34
+L8
+VS_K]Fm1?[R7lB89n5[9RO2
+R6
+32
+Z8 Mx2 4 ieee 14 std_logic_1164
+Z9 Mx1 4 ieee 11 numeric_std
+R7
+!s100 bl:;65J8`z_h?Sl:^_]m_0
+Emul32
+Z10 w1516496174
+R2
+R3
+Z11 8../vhdl/mulcascade.vhd
+Z12 F../vhdl/mulcascade.vhd
+l0
+L5
+V1=:HDNVYfXga6j;kOZXTV3
+R6
+32
+R7
+!s100 CW2M3S681RHgnP`^zDj`g2
+Abeh
+R2
+R3
+DEx4 work 5 mul32 0 22 1=:HDNVYfXga6j;kOZXTV3
+32
+R8
+R9
+l11
+L10
+Va[F;70`izK3fEd[mm<0FY0
+R6
+R7
+!s100 OSANKbn95Uj@ePD9jIDW00
+Emulcascade
+R10
+R2
+R3
+R11
+R12
+l0
+L41
+V1MZW5CZ:Lm[VVk]D3VTE>2
+R6
+32
+R7
+!s100 e[@l^^fVl:N7WEAQ:b:^X3
+Astruct
+R2
+R3
+DEx4 work 10 mulcascade 0 22 1MZW5CZ:Lm[VVk]D3VTE>2
+32
+R8
+R9
+l64
+L47
+V`WJ5YEBcT]M08BFmXLK8Z2
+R6
+R7
+!s100 U;[JR9NR781CQk=V`I<:T2
+Ereg64
+R10
+R2
+R3
+R11
+R12
+l0
+L19
+VU9KR0CcVmC9?:oKLliVg<2
+R6
+32
+R7
+!s100 Eib7B3T[__1M]TlLVCehk2
+Abeh
+R2
+R3
+DEx4 work 5 reg64 0 22 U9KR0CcVmC9?:oKLliVg<2
+32
+R8
+R9
+l26
+L25
+VWEa_C:kCWbT?l7l;Z94e=2
+R6
+R7
+!s100 `_RoG:VW9Phl=SP`_;N@C1
