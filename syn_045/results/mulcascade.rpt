@@ -4,7 +4,7 @@ Information: Updating design information... (UID-85)
 Report : reference
 Design : mulcascade
 Version: Z-2007.03-SP5
-Date   : Sat Jan 20 17:45:25 2018
+Date   : Wed Jan 24 16:51:37 2018
 ****************************************
 
 Attributes:
@@ -21,25 +21,23 @@ Attributes:
 Reference          Library       Unit Area   Count    Total Area   Attributes
 -----------------------------------------------------------------------------
 BUF_X1             NangateOpenCellLibrary
-                                  0.798000      84     67.031998  
-BUF_X2             NangateOpenCellLibrary
-                                  1.064000       3      3.192000  
-BUF_X4             NangateOpenCellLibrary
-                                  1.862000      78    145.235999  
+                                  0.798000       1      0.798000  
 INV_X1             NangateOpenCellLibrary
-                                  0.532000       6      3.192000  
+                                  0.532000     142     75.544001  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000     124     98.951997  
 INV_X4             NangateOpenCellLibrary
                                   1.330000       2      2.660000  
-mul32_0                        6326.012012       1   6326.012012  h
-mul32_1                        6286.910012       1   6286.910012  h
-mul32_2                        6339.312012       1   6339.312012  h
-mul32_3                        6289.570012       1   6289.570012  h
-reg64_0                         345.268011       1    345.268011  h, n
-reg64_1                         345.268011       1    345.268011  h, n
-reg64_2                         345.268011       1    345.268011  h, n
-reg64_3                         345.268011       1    345.268011  h, n
+mul32_0                        5282.228028       1   5282.228028  h
+mul32_1                        5210.408029       1   5210.408029  h
+mul32_2                        5271.588031       1   5271.588031  h
+mul32_3                        5217.324026       1   5217.324026  h
+reg64_0                         346.332011       1    346.332011  h, n
+reg64_1                         347.396011       1    347.396011  h, n
+reg64_2                         346.864011       1    346.864011  h, n
+reg64_3                         345.800011       1    345.800011  h, n
 -----------------------------------------------------------------------------
-Total 13 references                                 26844.188090
+Total 12 references                                 22545.894157
 1
  
 ****************************************
@@ -51,14 +49,14 @@ Report : timing
         -capacitance
 Design : mulcascade
 Version: Z-2007.03-SP5
-Date   : Sat Jan 20 17:45:25 2018
+Date   : Wed Jan 24 16:51:37 2018
 ****************************************
 
 Operating Conditions: slow   Library: NangateOpenCellLibrary
 Wire Load Model Mode: top
 
-  Startpoint: a1[8] (input port clocked by CLK)
-  Endpoint: reg1/q_reg[63]
+  Startpoint: a2[8] (input port clocked by CLK)
+  Endpoint: reg2/q_reg[49]
             (rising edge-triggered flip-flop clocked by CLK)
   Path Group: CLK
   Path Type: max
@@ -72,107 +70,52 @@ Wire Load Model Mode: top
   clock CLK (rise edge)                                             0.00       0.00
   clock network delay (ideal)                                       0.00       0.00
   input external delay                                              0.80       0.80 f
-  a1[8] (in)                                  236.55      1.00      0.00       0.80 f
-  mul1/a[8] (mul32_2)                                               0.00       0.80 f
-  mul1/mult_12/a[8] (mul32_2_DW_mult_uns_1)                         0.00       0.80 f
-  mul1/mult_12/U2610/Z (XOR2_X2)               11.81      0.32      0.76       1.56 r
-  mul1/mult_12/U2696/ZN (OR2_X4)               48.87      0.11      0.25       1.81 r
-  mul1/mult_12/U2697/ZN (INV_X32)             120.02      0.03      0.36       2.17 f
-  mul1/mult_12/U2828/ZN (AOI22_X2)              1.92      0.22      0.16       2.33 r
-  mul1/mult_12/U2670/ZN (OAI21_X1)              4.66      0.12      0.14       2.47 f
-  mul1/mult_12/U1810/Z (XOR2_X2)                3.71      0.14      0.26       2.73 f
-  mul1/mult_12/U901/CO (HA_X1)                  3.71      0.02      0.21       2.94 f
-  mul1/mult_12/U899/CO (HA_X1)                  3.05      0.02      0.13       3.07 f
-  mul1/mult_12/U896/S (FA_X1)                   3.05      0.06      0.38       3.45 f
-  mul1/mult_12/U895/S (FA_X1)                   5.34      0.06      0.41       3.85 f
-  mul1/mult_12/U2680/ZN (NOR2_X1)               3.45      0.09      0.15       4.01 r
-  mul1/mult_12/U2764/ZN (INV_X2)               13.04      0.03      0.08       4.09 f
-  mul1/mult_12/U2700/ZN (AOI21_X4)              4.59      0.07      0.16       4.25 r
-  mul1/mult_12/U2669/ZN (OAI21_X1)              4.67      0.04      0.09       4.34 f
-  mul1/mult_12/U2619/ZN (AOI21_X2)              4.56      0.09      0.14       4.48 r
-  mul1/mult_12/U2608/ZN (OAI21_X1)              7.87      0.05      0.11       4.59 f
-  mul1/mult_12/U484/ZN (AOI21_X4)               5.95      0.08      0.15       4.74 r
-  mul1/mult_12/U2622/ZN (OAI21_X2)              9.16      0.04      0.10       4.84 f
-  mul1/mult_12/U470/ZN (AOI21_X4)               8.06      0.09      0.16       5.00 r
-  mul1/mult_12/U2725/ZN (OAI21_X2)              7.87      0.04      0.10       5.10 f
-  mul1/mult_12/U456/ZN (AOI21_X4)               8.06      0.09      0.16       5.25 r
-  mul1/mult_12/U2722/ZN (OAI21_X2)              7.87      0.04      0.10       5.35 f
-  mul1/mult_12/U442/ZN (AOI21_X4)              11.22      0.10      0.17       5.52 r
-  mul1/mult_12/U436/ZN (OAI21_X4)              10.95      0.04      0.12       5.64 f
-  mul1/mult_12/U428/ZN (AOI21_X4)              11.22      0.10      0.17       5.81 r
-  mul1/mult_12/U422/ZN (OAI21_X4)              10.95      0.04      0.12       5.93 f
-  mul1/mult_12/U414/ZN (AOI21_X4)              11.22      0.10      0.17       6.10 r
-  mul1/mult_12/U406/ZN (OAI21_X4)              10.95      0.04      0.12       6.21 f
-  mul1/mult_12/U398/ZN (AOI21_X4)               8.06      0.09      0.16       6.37 r
-  mul1/mult_12/U2723/ZN (OAI21_X2)              7.87      0.04      0.10       6.47 f
-  mul1/mult_12/U384/ZN (AOI21_X4)               8.06      0.09      0.16       6.62 r
-  mul1/mult_12/U2724/ZN (OAI21_X2)              7.87      0.04      0.10       6.72 f
-  mul1/mult_12/U2607/ZN (AOI21_X4)              5.95      0.08      0.14       6.87 r
-  mul1/mult_12/U2718/ZN (OAI21_X2)              7.87      0.03      0.09       6.96 f
-  mul1/mult_12/U356/ZN (AOI21_X4)               6.66      0.08      0.15       7.11 r
-  mul1/mult_12/U2606/ZN (OAI21_X1)              4.67      0.04      0.09       7.20 f
-  mul1/mult_12/U2703/ZN (AOI21_X2)              4.56      0.09      0.14       7.34 r
-  mul1/mult_12/U2702/ZN (OAI21_X1)              3.05      0.04      0.08       7.42 f
-  mul1/mult_12/U334/CO (FA_X1)                  6.52      0.06      0.32       7.74 f
-  mul1/mult_12/U2597/ZN (NAND2_X1)              3.77      0.05      0.10       7.84 r
-  mul1/mult_12/U2599/ZN (NAND3_X2)              6.73      0.04      0.10       7.94 f
-  mul1/mult_12/U2649/ZN (NAND2_X1)              3.77      0.05      0.10       8.04 r
-  mul1/mult_12/U2650/ZN (NAND3_X2)              6.73      0.04      0.10       8.14 f
-  mul1/mult_12/U2655/ZN (NAND2_X1)              1.91      0.04      0.08       8.23 r
-  mul1/mult_12/U2656/ZN (NAND3_X1)              3.05      0.03      0.08       8.31 f
-  mul1/mult_12/U330/CO (FA_X1)                  3.05      0.05      0.29       8.60 f
-  mul1/mult_12/U329/CO (FA_X1)                  3.05      0.05      0.30       8.90 f
-  mul1/mult_12/U328/CO (FA_X1)                  3.05      0.05      0.30       9.19 f
-  mul1/mult_12/U327/CO (FA_X1)                  3.05      0.05      0.30       9.49 f
-  mul1/mult_12/U326/CO (FA_X1)                  3.05      0.05      0.30       9.79 f
-  mul1/mult_12/U325/CO (FA_X1)                  3.05      0.05      0.30      10.08 f
-  mul1/mult_12/U324/CO (FA_X1)                  6.52      0.06      0.32      10.41 f
-  mul1/mult_12/U2591/ZN (NAND2_X1)              3.77      0.05      0.10      10.51 r
-  mul1/mult_12/U2593/ZN (NAND3_X2)              6.73      0.04      0.10      10.61 f
-  mul1/mult_12/U2638/ZN (NAND2_X1)              1.91      0.04      0.08      10.70 r
-  mul1/mult_12/U2605/ZN (NAND3_X1)              5.31      0.05      0.10      10.79 f
-  mul1/mult_12/U2643/ZN (NAND2_X1)              1.91      0.04      0.09      10.88 r
-  mul1/mult_12/U2644/ZN (NAND3_X1)              3.05      0.03      0.08      10.96 f
-  mul1/mult_12/U320/CO (FA_X1)                  3.05      0.05      0.29      11.25 f
-  mul1/mult_12/U319/CO (FA_X1)                  3.05      0.05      0.30      11.55 f
-  mul1/mult_12/U318/CO (FA_X1)                  3.05      0.05      0.30      11.85 f
-  mul1/mult_12/U317/CO (FA_X1)                  3.05      0.05      0.30      12.15 f
-  mul1/mult_12/U316/CO (FA_X1)                  3.05      0.05      0.30      12.44 f
-  mul1/mult_12/U315/CO (FA_X1)                  3.05      0.05      0.30      12.74 f
-  mul1/mult_12/U314/CO (FA_X1)                  6.52      0.06      0.32      13.06 f
-  mul1/mult_12/U2585/ZN (NAND2_X1)              3.77      0.05      0.10      13.17 r
-  mul1/mult_12/U2587/ZN (NAND3_X2)              6.73      0.04      0.10      13.27 f
-  mul1/mult_12/U2627/ZN (NAND2_X1)              1.91      0.04      0.08      13.35 r
-  mul1/mult_12/U2604/ZN (NAND3_X1)              5.31      0.05      0.10      13.45 f
-  mul1/mult_12/U2632/ZN (NAND2_X1)              1.91      0.04      0.09      13.54 r
-  mul1/mult_12/U2633/ZN (NAND3_X1)              3.05      0.03      0.08      13.62 f
-  mul1/mult_12/U308/CO (FA_X1)                  3.05      0.05      0.29      13.91 f
-  mul1/mult_12/U307/CO (FA_X1)                  3.05      0.05      0.30      14.21 f
-  mul1/mult_12/U306/CO (FA_X1)                  6.52      0.06      0.32      14.53 f
-  mul1/mult_12/U2577/ZN (NAND2_X1)              1.91      0.04      0.09      14.62 r
-  mul1/mult_12/U2579/ZN (NAND3_X1)              3.91      0.04      0.09      14.71 f
-  mul1/mult_12/U2657/ZN (NAND2_X1)              1.88      0.03      0.07      14.78 r
-  mul1/mult_12/U2659/ZN (NAND2_X1)              1.40      0.02      0.05      14.83 f
-  mul1/mult_12/product[63] (mul32_2_DW_mult_uns_1)                  0.00      14.83 f
-  mul1/result[63] (mul32_2)                                         0.00      14.83 f
-  reg1/d[63] (reg64_2)                                              0.00      14.83 f
-  reg1/q_reg[63]/D (DFFR_X1)                              0.02      0.01      14.84 f
-  data arrival time                                                           14.84
+  a2[8] (in)                                   11.16      1.00      0.00       0.80 f
+  mul2/a[8] (mul32_1)                                               0.00       0.80 f
+  mul2/mult_12/a[8] (mul32_1_DW_mult_uns_1)                         0.00       0.80 f
+  mul2/mult_12/U3875/ZN (INV_X4)                5.35      0.16      0.32       1.12 r
+  mul2/mult_12/U3874/ZN (INV_X1)                1.88      0.04      0.06       1.18 f
+  mul2/mult_12/U3872/ZN (NAND2_X1)              3.67      0.07      0.08       1.26 r
+  mul2/mult_12/U3873/ZN (NAND2_X2)             14.04      0.07      0.10       1.37 f
+  mul2/mult_12/U4117/ZN (INV_X8)              110.44      0.12      0.26       1.63 r
+  mul2/mult_12/U3741/ZN (NAND2_X2)             22.59      0.12      0.19       1.81 f
+  mul2/mult_12/U3937/ZN (OAI22_X1)              4.01      0.15      0.21       2.03 r
+  mul2/mult_12/U1275/S (FA_X1)                  3.05      0.06      0.37       2.40 f
+  mul2/mult_12/U1273/CO (FA_X1)                 4.01      0.05      0.31       2.70 f
+  mul2/mult_12/U1259/S (FA_X1)                  3.78      0.06      0.45       3.15 f
+  mul2/mult_12/U1257/S (FA_X1)                  3.05      0.04      0.48       3.63 r
+  mul2/mult_12/U1256/S (FA_X1)                  3.92      0.06      0.34       3.97 f
+  mul2/mult_12/U3323/ZN (OR2_X2)                7.98      0.03      0.21       4.18 f
+  mul2/mult_12/U3478/ZN (AOI21_X1)              1.93      0.09      0.12       4.30 r
+  mul2/mult_12/U3841/ZN (OAI21_X1)              3.21      0.03      0.08       4.38 f
+  mul2/mult_12/U3783/ZN (AOI21_X1)              1.84      0.08      0.17       4.55 r
+  mul2/mult_12/U3971/ZN (OAI21_X1)              3.96      0.04      0.09       4.64 f
+  mul2/mult_12/U4100/ZN (NAND2_X1)              3.93      0.05      0.10       4.74 r
+  mul2/mult_12/U3774/ZN (AND2_X2)              12.25      0.06      0.15       4.89 r
+  mul2/mult_12/U4142/ZN (OAI21_X1)              3.35      0.03      0.08       4.97 f
+  mul2/mult_12/U3940/ZN (AOI21_X2)              4.56      0.09      0.13       5.10 r
+  mul2/mult_12/U4129/ZN (OAI21_X1)              2.53      0.03      0.08       5.18 f
+  mul2/mult_12/U4097/ZN (XNOR2_X1)              1.41      0.03      0.14       5.32 f
+  mul2/mult_12/product[49] (mul32_1_DW_mult_uns_1)                  0.00       5.32 f
+  mul2/result[49] (mul32_1)                                         0.00       5.32 f
+  reg2/d[49] (reg64_1)                                              0.00       5.32 f
+  reg2/q_reg[49]/D (DFFR_X2)                              0.03      0.01       5.33 f
+  data arrival time                                                            5.33
 
-  clock CLK (rise edge)                                            15.00      15.00
-  clock network delay (ideal)                                       0.00      15.00
-  reg1/q_reg[63]/CK (DFFR_X1)                                       0.00      15.00 r
-  library setup time                                               -0.16      14.84
-  data required time                                                          14.84
+  clock CLK (rise edge)                                             5.50       5.50
+  clock network delay (ideal)                                       0.00       5.50
+  reg2/q_reg[49]/CK (DFFR_X2)                                       0.00       5.50 r
+  library setup time                                               -0.17       5.33
+  data required time                                                           5.33
   ------------------------------------------------------------------------------------
-  data required time                                                          14.84
-  data arrival time                                                          -14.84
+  data required time                                                           5.33
+  data arrival time                                                           -5.33
   ------------------------------------------------------------------------------------
-  slack (MET)                                                                  0.01
+  slack (MET)                                                                  0.00
 
 
   Startpoint: resetn (input port clocked by CLK)
-  Endpoint: reg0/q_reg[0]/RN
+  Endpoint: reg2/q_reg[49]/RN
             (internal path endpoint)
   Path Group: default
   Path Type: max
@@ -183,22 +126,22 @@ Wire Load Model Mode: top
 
   Point                           Cap     Trans      Incr       Path
   ---------------------------------------------------------------------
-  input external delay                               0.80       0.80 f
-  resetn (in)                    2.01      1.00      0.00       0.80 f
-  U173/Z (BUF_X2)               38.76      0.08      0.53       1.33 f
-  reg0/resetn (reg64_3)                              0.00       1.33 f
-  reg0/U3/Z (BUF_X1)            27.09      0.07      0.22       1.55 f
-  reg0/q_reg[0]/RN (DFFR_X1)               0.07      0.02       1.57 f
-  data arrival time                                             1.57
+  input external delay                               0.80       0.80 r
+  resetn (in)                    1.24      1.00      0.00       0.80 r
+  U122/Z (BUF_X1)               38.76      0.32      0.51       1.31 r
+  reg2/resetn (reg64_1)                              0.00       1.31 r
+  reg2/U7/Z (BUF_X1)            29.89      0.25      0.40       1.71 r
+  reg2/q_reg[49]/RN (DFFR_X2)              0.25      0.03       1.74 r
+  data arrival time                                             1.74
 
   max_delay                                         20.00      20.00
   output external delay                              0.00      20.00
   data required time                                           20.00
   ---------------------------------------------------------------------
   data required time                                           20.00
-  data arrival time                                            -1.57
+  data arrival time                                            -1.74
   ---------------------------------------------------------------------
-  slack (MET)                                                  18.43
+  slack (MET)                                                  18.26
 
 
 1
@@ -212,7 +155,7 @@ Report : power
         -analysis_effort low
 Design : mulcascade
 Version: Z-2007.03-SP5
-Date   : Sat Jan 20 17:45:26 2018
+Date   : Wed Jan 24 16:51:39 2018
 ****************************************
 
 
@@ -238,11 +181,11 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =   2.2588 mW   (52%)
-  Net Switching Power  =   2.1002 mW   (48%)
+  Cell Internal Power  =   4.7866 mW   (50%)
+  Net Switching Power  =   4.7339 mW   (50%)
                          ---------
-Total Dynamic Power    =   4.3590 mW  (100%)
+Total Dynamic Power    =   9.5205 mW  (100%)
 
-Cell Leakage Power     = 454.6266 uW
+Cell Leakage Power     = 330.6149 uW
 
 1

@@ -70,7 +70,7 @@ set_load                        5         [all_outputs]
 
 ## Timing Constraints
 # Establishing clock period:  Since clock is ideal, we don't want the tool to optimize the clk net so we set it as "dont touch"
-create_clock -name CLK -period 15 -waveform {0 1.25} {clk}
+create_clock -name CLK -period 5.5 -waveform {0 1.25} {clk}
 set_dont_touch_network CLK  
 
 # Delays imposed by the communication to/from other blocks in the system. 

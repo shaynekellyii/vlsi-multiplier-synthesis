@@ -1,0 +1,39 @@
+eport : power
+        -analysis_effort high
+Design : mulcascade
+Version: Z-2007.03-SP5
+Date   : Wed Jan 24 17:53:07 2018
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /ensc/fac1/fcampi/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_fast.db)
+
+
+Operating Conditions: fast   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+mulcascade             5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.25 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   1.3587 mW   (58%)
+  Net Switching Power  = 974.3569 uW   (42%)
+                         ---------
+Total Dynamic Power    =   2.3330 mW  (100%)
+
+Cell Leakage Power     =   1.8100 mW
+
+#exit
+
